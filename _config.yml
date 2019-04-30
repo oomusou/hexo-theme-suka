@@ -94,13 +94,13 @@ nav:
     use: true
   tags:
     use: true
-  rss:
-    use: false
   share:
-    use: true
+    use: false
   search:
     use: true
     link: /search
+  rss:
+    use: true
   pages:
     #About:
       #link: /about/
