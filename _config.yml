@@ -92,6 +92,8 @@ nav:
     use: true
   archives:
     use: true
+  tags:
+    use: true
   rss:
     use: false
   share:
