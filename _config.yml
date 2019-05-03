@@ -57,7 +57,7 @@ footer:
   # Specify the date when the site was setup.
   # For example, if you set it as 2015, then footer will show something like '© 2015 - 2018'
   # If you just want to show something like '© 2018' only, simly leave it blank.
-  copyright_since:
+  copyright_since: 2015
   # Footer Text
   # You can specify the text you want to show in footer, HTML tag is supported.
   # For example, you can setup ICP license number as:
@@ -72,7 +72,7 @@ footer:
 # ---------------------------------------------------------------
 uiux:
   # Muilt line slogan is supported.
-  slogan: Hi, nice to meet you.
+  slogan: 記錄自己的學習過程
   # For most link color except post color
   link_color:
   primary_color:
@@ -300,7 +300,7 @@ search:
 #     enable: true
 #
 highlight:
-  theme: github
+  theme: hopscotch
   # You can only enable the Suka built in prettify theme here. Check the /source/css/highlight directories.
   # The theme name is the css file name without `.min.css`, as [theme-name].min.css
 
