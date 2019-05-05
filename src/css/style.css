@@ -357,9 +357,10 @@ header .divider {
     background-clip: border-box;
 }
 
+
 .post-entry .post-thumbnail {
-    width: 100%;
-    height: 100%;
+    width: 128px;
+    height: 128px;
     min-height: 8rem;
     background-position: center;
     background-size: cover;
@@ -369,10 +370,11 @@ header .divider {
 
 @media (min-width: 961px) {
     .post-entry .column-body {
-        order: -1;
+        order: 0;
     }
     .post-entry .post-thumbnail {
         min-height: 6.5rem;
+        margin-top: 15px;
     }
 }
 
@@ -1443,4 +1445,9 @@ a.timeline-tile-title span:hover {
 
 .link-item .link-descr {
     font-size: .65rem
+}
+
+.column-thumbnail {
+    text-align: center;
+    background-color: #f2f2f2;
 }
