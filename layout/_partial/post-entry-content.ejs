@@ -26,10 +26,10 @@
     <% if (post.categories && post.categories.length) { %>
     <span class="suka-devide-dot"></span>
     <%- list_categories(post.categories, {
-                show_count: false,
-                separator: '<span class="suka-devide-dot"></span>',
-                style: 'none'
-            }) %>
+                    show_count: false,
+                    separator: '<span class="suka-devide-dot"></span>',
+                    style: 'none'
+                }) %>
     <% } %>
     <% if ( (theme.valine_counter.enable === true) && (theme.valine_counter.index_post_pv.enable === true) ) { %>
     <span class="suka-devide-dot"></span>

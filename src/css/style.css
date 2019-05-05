@@ -261,7 +261,7 @@ header .divider {
 
 @media (min-width: 481px) {
     header {
-        padding: 4.8rem .8rem 2.6rem;
+        padding: 4.8rem .8rem 0.6rem;
     }
     .header-title {
         font-size: 1.4rem
@@ -270,7 +270,7 @@ header .divider {
 
 @media (min-width: 1025px) {
     header {
-        padding: 4.8rem .8rem 3rem;
+        padding: 4.8rem .8rem 0.6rem;
     }
     .header-title {
         font-size: 1.3rem
