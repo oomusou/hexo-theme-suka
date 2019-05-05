@@ -18,27 +18,27 @@ head:
   #   To get or check favicons visit: https://realfavicongenerator.net
   favicon:
     # You should use a image/x-icon type icon and configure it here.
-    ico: /img/suka-favicon.ico
+    ico: /favicon.ico
     # 16x16 png
-    small:
+    small: /favicon-16x16.png
     # 32x32 png
-    medium: # /img/suka-favicon.png
+    medium: /favicon-32x32.png
     # 180x180 png
-    apple_touch_icon:
+    apple_touch_icon: /apple-touch-icon.png
     # 192x192 png
     large:
     # svg icon
-    safari_pinned_tab:
+    safari_pinned_tab: /safari-pinned-tab.svg
   # Color
   #   It will defined color below:
   #     Android Chrome Color
   #     Safari Pinned Tab
-  color:
+  color: #000
   # PWA
   #   You can setup your blog as pwa with a manifest.
   #   https://app-manifest.firebaseapp.com where you can generate a manifest quickly
   #   Leave it blank if you don't have one
-  pwa_manifest:
+  pwa_manifest: /site.webmanifest
   # Open search
   #   Fill in your opensearch xml file here.
   #   Leave it blank if you don't have one
