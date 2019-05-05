@@ -291,29 +291,27 @@ header .divider {
  * =========================================================
  */
 
-/* Responsive */
-
 .main-container {
-    padding: .4rem;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+  padding: .4rem;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media screen and (min-width: 481px) {
-    .main-container {
-        max-width: 28.4rem;
-        padding-right: .5rem;
-        padding-left: .5rem;
-    }
+  .main-container {
+    max-width: 28.4rem;
+    padding-right: .5rem;
+    padding-left: .5rem;
+  }
 }
 
 @media screen and (min-width: 721px) {
-    .main-container {
-        max-width: 33.5rem;
-        padding-right: 1.6rem;
-        padding-left: 1.6rem;
-    }
+  .main-container {
+    max-width: 33.5rem;
+    padding-right: 1.6rem;
+    padding-left: 1.6rem;
+  }
 }
 
 /* desktop */
@@ -330,16 +328,16 @@ header .divider {
 }
 
 .post-stream-container {
-    width: 100%;
+  width: 100%;
 }
 
 .pagination .page-item i {
-    vertical-align: -7.5% !important;
+  vertical-align: -7.5% !important;
 }
 
 .pagination .page-item a:hover {
-    color: #667189;
-    opacity: .85;
+  color: #667189;
+  opacity: .85;
 }
 
 /**

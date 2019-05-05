@@ -6,7 +6,8 @@
 <article class="post-entry container px-0 card">
   <div class="columns col-gapless">
     <% if (post.feature) { %>
-    <div class="column column-thumbnail col-3 col-lg-12">
+    <div class="column column-thumbnail col-3 col-lg-12" style="cursor:pointer"
+      onclick="window.location='<%= url_for(post.path) %>'">
       <a href="<%= url_for(post.path) %>">
         <img class="post-thumbnail" src="<%= post.feature %>">
       </a>
