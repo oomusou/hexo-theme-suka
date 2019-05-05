@@ -1,8 +1,8 @@
 <% if ( (theme.toc.enable === true) && (page.toc !== false) ) { %>
 <% var toc_obj = toc(page.content, {
-        class: 'post-toc',
-        list_number: theme.toc.line_number || false,
-    }) %>
+    class: 'post-toc',
+    list_number: theme.toc.line_number || false,
+}) %>
 <% } %>
 <div class="post-container">
     <div id="post-card" class="card">
