@@ -403,7 +403,7 @@ header .divider {
 
 .post-entry .card-body {
     padding-top: .6rem;
-    font-size: .75rem;
+    font-size: 1.0rem;
 }
 
 .post-entry .text-gray a {
@@ -453,9 +453,14 @@ header .divider {
 }
 
 @media screen and (min-width: 961px) {
-    .post-container {
-        max-width: 50.2rem;
-    }
+  .post-container {
+    max-width: 50.2rem;
+  }
+
+  .post-entry .card-body {
+    padding-top: .6rem;
+    font-size: .80rem;
+  }
 }
 
 @media screen and (min-width: 1281px) {
@@ -656,8 +661,7 @@ a.category-link {
 #post-content {
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
-    line-height: 1.7;
-    font-size: .8rem;
+    font-size: .85rem;
     word-wrap: break-word;
     padding-top: 0;
     padding-bottom: 1.8rem;
