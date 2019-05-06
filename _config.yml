@@ -72,7 +72,7 @@ footer:
 # ---------------------------------------------------------------
 uiux:
   # Muilt line slogan is supported.
-  slogan: 記錄自己的學習過程
+  slogan: 學而時習之，不亦悅乎
   # For most link color except post color
   link_color:
   primary_color:
