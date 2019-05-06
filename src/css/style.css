@@ -377,8 +377,8 @@ header .divider {
 }
 
 .post-entry .post-thumbnail {
-  width: 128px;
-  height: 128px;
+  width: auto;
+  height: auto;
   min-height: 8rem;
   background-position: center;
   background-size: cover;
