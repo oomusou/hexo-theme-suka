@@ -229,7 +229,8 @@ html *::-webkit-scrollbar-thumb {
 /* Only show on the screen width smaller than or equal to 960px. */
 
 header {
-    padding: 3.6rem .4rem 1.8rem;
+    /* padding: 3.6rem .4rem 1.8rem; */
+  padding: 3.6rem .4rem 0.6rem;
 }
 
 header a {
@@ -259,6 +260,7 @@ header .divider {
     font-size: .8rem
 }
 
+/* destkop */
 @media (min-width: 481px) {
     header {
         padding: 4.8rem .8rem 0.6rem;
@@ -457,6 +459,7 @@ header .divider {
   margin-right: auto;
   padding-right: 0;
   padding-left: 0;
+  padding-top: 0.8rem;
 }
 
 @media screen and (min-width: 481px) {
@@ -479,7 +482,6 @@ header .divider {
 @media screen and (min-width: 961px) {
   .post-container {
     max-width: 50.2rem;
-    padding-top: 0.8rem;
   }
 }
 
