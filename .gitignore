@@ -4,4 +4,4 @@ node_modules
 .idea
 .directory
 package-lock.json
-source/css/style.min.css
+source/css/*.min.css
