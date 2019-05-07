@@ -9,22 +9,20 @@
 @media screen and (min-width: 481px) {
   .main-container {
     max-width: 28.4rem;
-    /* padding-right: .5rem; */
-    /* padding-left: .5rem; */
   }
 }
 
 /* ipad vertical */
 @media screen and (min-width: 721px) {
   .main-container {
-    max-width: 37.2rem;
+    max-width: 44rem;
   }
 }
 
 /* desktop, ipdd horizontal */
 @media screen and (min-width: 961px) {
   .main-container {
-    max-width: 50.2rem;
+    max-width: 48rem;
   }
 }
 
