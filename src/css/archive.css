@@ -1,0 +1,11 @@
+a.timeline-tile-title,
+a.timeline-tile-title span,
+a.timeline-tile-title:visited {
+  color: #454d5d;
+  opacity: .85;
+}
+
+a.timeline-tile-title span:hover {
+  color: #454d5d;
+  opacity: 1;
+}

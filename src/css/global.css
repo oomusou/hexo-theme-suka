@@ -1,0 +1,43 @@
+body,
+html {
+  overflow-x: hidden !important;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Override the Spectre.css */
+html a:focus,
+html .btn:focus {
+  box-shadow: none !important;
+}
+
+.card {
+  /* Remove card border */
+  border: none;
+}
+
+.timeline .timeline-item:last-child::before {
+  /* Fix timeline */
+  background: transparent;
+}
+
+/* Scrollbar */
+html *::-webkit-scrollbar {
+  width: 6px;
+  height: 4px;
+  background: transparent;
+}
+
+@media (min-width: 1024px) {
+  html *::-webkit-scrollbar {
+    width: 8px;
+    height: 6px;
+  }
+}
+
+html *::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, .3);
+}
+
+.suka-devide-dot::after {
+  content: " · "
+}
