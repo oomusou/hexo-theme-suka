@@ -13,12 +13,6 @@
   padding-top: 0;
 }
 
-/* desktop */
-@media (min-width: 961px) {
-  #post-content {
-    font-size: .85rem;
-  }
-}
 
 #post-content .octicon {
   display: inline-block;
@@ -483,4 +477,18 @@
 /* Fix for Prettify */
 #post-content .prettyprint ol {
   margin: 0;
+}
+
+/* ipad vertical */
+@media screen and (min-width: 721px) {
+  #post-content {
+    font-size: 1.1rem;
+  }
+}
+
+/* desktop */
+@media (min-width: 961px) {
+  #post-content {
+    font-size: .85rem;
+  }
 }

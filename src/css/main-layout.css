@@ -5,6 +5,19 @@
   margin-right: auto;
 }
 
+.post-stream-container {
+  width: 100%;
+}
+
+.pagination .page-item i {
+  vertical-align: -7.5% !important;
+}
+
+.pagination .page-item a:hover {
+  color: #667189;
+  opacity: .85;
+}
+
 /* iPhone XS-Max horizontal */
 @media screen and (min-width: 481px) {
   .main-container {
@@ -19,7 +32,7 @@
   }
 }
 
-/* desktop, ipdd horizontal */
+/* desktop, ipad horizontal */
 @media screen and (min-width: 961px) {
   .main-container {
     max-width: 48rem;
@@ -31,17 +44,4 @@
   .main-container {
     max-width: 66rem;
   }
-}
-
-.post-stream-container {
-  width: 100%;
-}
-
-.pagination .page-item i {
-  vertical-align: -7.5% !important;
-}
-
-.pagination .page-item a:hover {
-  color: #667189;
-  opacity: .85;
 }
