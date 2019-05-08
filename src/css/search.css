@@ -57,3 +57,19 @@
 .search-noresult {
   padding-top: .5rem;
 }
+
+/* iPad portrait */
+@media screen and (min-width: 721px) {
+  .search-result-summary {
+    font-size: 0.9rem;
+    line-height: 1.6rem !important;
+  }
+}
+
+/* desktop, iPad landscape */
+@media screen and (min-width: 961px) {
+  .search-result-summary {
+    font-size: 0.8rem;
+    line-height: 1.4rem !important;
+  }
+}
