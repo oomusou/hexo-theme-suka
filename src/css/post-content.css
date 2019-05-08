@@ -479,15 +479,15 @@
   margin: 0;
 }
 
-/* ipad vertical */
+/* iPad portrait */
 @media screen and (min-width: 721px) {
   #post-content {
     font-size: 1.1rem;
   }
 }
 
-/* desktop */
-@media (min-width: 961px) {
+/* desktop & iPad landscape */
+@media screen and (min-width: 961px) {
   #post-content {
     font-size: .85rem;
   }

@@ -1,4 +1,4 @@
-/* iPhone X, iPhone XS-Max vertical */
+/* iPhone portrait */
 .main-container {
   width: 100%;
   margin-left: auto;
@@ -18,21 +18,21 @@
   opacity: .85;
 }
 
-/* iPhone XS-Max horizontal */
+/* iPhone landscape */
 @media screen and (min-width: 481px) {
   .main-container {
     max-width: 28.4rem;
   }
 }
 
-/* ipad vertical */
+/* ipad portrait */
 @media screen and (min-width: 721px) {
   .main-container {
     max-width: 44rem;
   }
 }
 
-/* desktop, ipad horizontal */
+/* desktop, ipad landscape */
 @media screen and (min-width: 961px) {
   .main-container {
     max-width: 48rem;
