@@ -59,7 +59,6 @@
   font-size: 0.9rem;
 }
 
-
 .post-entry .text-gray a {
   color: #acb3c2 !important;
 }
@@ -76,8 +75,30 @@
   padding-bottom: .6rem;
 }
 
+/* ipad vertical */
+@media screen and (min-width: 721px) {
+  .post-entry a.card-title {
+    font-size: 1.1rem;
+  }
+
+  .post-entry .card-body {
+    font-size: 1.0rem;
+  }
+}
+
+/* ipad horizontal */
+@media (min-width:961px) and (min-height:768px) and (orientation: landscape) {
+  .post-entry a.card-title {
+    font-size: 1.2rem;
+  }
+
+  .post-entry .card-body {
+    font-size: 1.2rem;
+  }
+}
+
 /* desktop */
-@media (min-width: 1024px) {
+@media (min-width: 961px) {
   .post-entry a.card-title {
     font-size: 1rem;
   }
@@ -91,28 +112,14 @@
     min-height: 6.5rem;
     margin-top: 15px;
   }
-}
 
-/* ipad vertical */
-@media (min-width:768px) and (min-height:1024px) {
   .post-entry a.card-title {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   .post-entry .card-body {
-    font-size: 1.2rem;
-  }
-}
-
-/* ipad horizontal */
-@media (min-width:1024px) and (min-height:768px) {
-  .post-entry a.card-title {
-    font-size: 1.2rem;
-  }
-
-  .post-entry .card-body {
-    font-size: 1.1rem;
-  }
+    font-size: 0.8rem;
+  } 
 }
 
 
