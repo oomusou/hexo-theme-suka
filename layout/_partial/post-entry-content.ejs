@@ -8,7 +8,7 @@
     <%- strip_html(truncate(post.content,{length: theme.post.entry_excerpt })) %>
     <% } %>
     <br>
-    <a href="<%= url_for(post.path) %>"><%= __('post.continue') %></a>
+    <a href="<%= url_for(post.path) %>">Read more</a>
 </p>
 <%
     var lazyloadImgSrc = '';

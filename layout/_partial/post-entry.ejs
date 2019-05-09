@@ -5,7 +5,6 @@
 <% } %>
 <article class="post-entry container px-0 card">
   <div class="columns col-gapless">
-    <% if (post.feature) { %>
     <div class="column column-thumbnail col-3 col-lg-12" onclick="window.location='<%= url_for(post.path) %>'">
       <a href="<%= url_for(post.path) %>">
         <img class="post-thumbnail" src="/<%= post.feature %>">
@@ -14,10 +13,5 @@
     <div class="column column-body col-9 col-lg-12">
       <%- partial('_partial/post-entry-content') %>
     </div>
-    <% } else { %>
-    <div class="column col-12">
-      <%- partial('_partial/post-entry-content') %>
-    </div>
-    <% } %>
   </div>
 </article>

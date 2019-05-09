@@ -1,9 +1,8 @@
 <div class="container">
     <div class="link-container">
-
-    <% if (site.data.links) { %>
+        <% if (site.data.links) { %>
         <div class="link-list">
-        <% for (var i in site.data.links) { %>
+            <% for (var i in site.data.links) { %>
             <div class="link-item">
                 <a href="<%= site.data.links[i].url %>" title="<%= i %>" target="_blank">
                     <div class="card">
@@ -19,8 +18,8 @@
                     </div>
                 </a>
             </div>
-        <% } %>
+            <% } %>
         </div>
-    <% } %>
+        <% } %>
     </div>
 </div>
