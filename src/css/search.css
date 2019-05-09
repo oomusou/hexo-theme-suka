@@ -66,8 +66,16 @@
   }
 }
 
-/* desktop, iPad landscape */
+/* iPad landscape */
 @media screen and (min-width: 961px) {
+  .search-result-summary {
+    font-size: 0.9rem;
+    line-height: 1.6rem !important;
+  }
+}
+
+/* desktop */
+@media only screen and (min-width: 961px) and (max-height:640px) {
   .search-result-summary {
     font-size: 0.8rem;
     line-height: 1.4rem !important;

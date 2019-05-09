@@ -10,7 +10,7 @@ a.timeline-tile-title span:hover {
   opacity: 1;
 }
 
-/* iPhone portrait / landscape*/
+/* iPhone */
 .tile-title {
   font-size: 0.9rem;
 }
@@ -22,8 +22,15 @@ a.timeline-tile-title span:hover {
   }
 }
 
-/* desktop, iPad landscape */
+/* iPad landscape */
 @media screen and (min-width: 961px) {
+  .tile-title {
+    font-size: 1.0rem;
+  }
+}
+
+/* desktop */
+@media only screen and (min-width: 961px) and (max-height:640px) {
   .tile-title {
     font-size: 0.8rem;
   }

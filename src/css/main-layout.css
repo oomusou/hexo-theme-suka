@@ -18,29 +18,29 @@
   opacity: .85;
 }
 
-/* iPhone landscape */
-@media screen and (min-width: 481px) {
-  .main-container {
-    max-width: 28.4rem;
-  }
-}
-
-/* ipad portrait */
-@media screen and (min-width: 721px) {
+/* iPad portrait */
+@media only screen and (min-width: 721px) {
   .main-container {
     max-width: 44rem;
   }
 }
 
-/* desktop, ipad landscape */
-@media screen and (min-width: 961px) {
+/* iPhone landscape  */
+@media only screen and (min-width: 800px) {
+  .main-container {
+    max-width: 37.5rem;
+  }
+}
+
+/* desktop, iPad landscape */
+@media only screen and (min-width: 961px) {
   .main-container {
     max-width: 48rem;
   }
 }
 
 /* iPad Pro  */
-@media screen and (min-width: 1335px) {
+@media only screen and (min-width: 1335px) {
   .main-container {
     max-width: 66rem;
   }

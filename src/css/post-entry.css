@@ -76,7 +76,7 @@
 }
 
 /* iPad portrait */
-@media screen and (min-width: 721px) {
+@media only screen and (min-width: 721px) {
   .post-entry a.card-title {
     font-size: 1.1rem;
   }
@@ -86,8 +86,19 @@
   }
 }
 
-/* desktop & iPad landscape */
-@media screen and (min-width: 961px) {
+/* iPad landscape */
+@media only screen and (min-width: 961px) {
+  .post-entry a.card-title {
+    font-size: 1.1rem;
+  }
+
+  .post-entry .card-body {
+    font-size: 1.0rem;
+  }
+}
+
+/* desktop */
+@media only screen and (min-width: 961px) and (max-height: 640px) {
   .post-entry a.card-title {
     font-size: 1rem;
   }
@@ -101,12 +112,4 @@
     min-height: 6.5rem;
     margin-top: 15px;
   }
-
-  .post-entry a.card-title {
-    font-size: 1rem;
-  }
-
-  .post-entry .card-body {
-    font-size: 0.8rem;
-  } 
 }

@@ -4,15 +4,6 @@
   max-width: 92%;
 }
 
-/* post content */
-#post-content {
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  font-size: .95rem;
-  word-wrap: break-word;
-  padding-top: 0;
-}
-
 
 #post-content .octicon {
   display: inline-block;
@@ -80,7 +71,6 @@
 }
 
 /* H1-H6 */
-
 #post-content h1 {
   padding-bottom: 0.3em;
   font-size: 2em;
@@ -479,15 +469,38 @@
   margin: 0;
 }
 
+/* iPhone portrait */
+#post-content {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  font-size: .95rem;
+  word-wrap: break-word;
+  padding-top: 0;
+}
+
 /* iPad portrait */
-@media screen and (min-width: 721px) {
+@media only screen and (min-width: 721px) {
   #post-content {
     font-size: 1.1rem;
   }
 }
 
-/* desktop & iPad landscape */
-@media screen and (min-width: 961px) {
+/* iPhone landscape */
+@media only screen and (min-width: 800px) {
+  #post-content {
+    font-size: 0.95rem;
+  }
+}
+
+/* iPad landscape */
+@media only screen and (min-width: 961px) {
+  #post-content {
+    font-size: 1.1rem;
+  }
+}
+
+/* desktop */
+@media only screen and (min-width: 961px) and (max-height:640px) {
   #post-content {
     font-size: .85rem;
   }
