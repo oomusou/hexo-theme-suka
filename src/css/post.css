@@ -180,10 +180,10 @@ a.category-link {
   background-color: #eee;
 }
 
-/* iPhne portrait */
-@media screen and (min-width: 400px) {
+/* iPhone SE landscape */
+@media screen and (min-width: 480px) {
   .post-container {
-    max-width: 20rem;
+    max-width: 27rem;
   }
 }
 
@@ -194,7 +194,7 @@ a.category-link {
   }
 }
 
-/* iPhone landscape  */
+/* iPhone XS-Max landscape  */
 @media screen and (min-width: 800px) {
   .post-container {
     max-width: 37.5rem;
