@@ -204,13 +204,6 @@ a.category-link {
 /* desktop, iPad landscape */
 @media screen and (min-width: 961px) {
   .post-container {
-    max-width: 48rem;
-  }
-}
-
-/* iPad Pro */
-@media screen and (min-width: 1281px) {
-  .post-container {
-    max-width: 66rem;
+    max-width: 94.5%;
   }
 }
