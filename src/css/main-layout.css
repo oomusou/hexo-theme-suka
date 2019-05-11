@@ -18,6 +18,12 @@
   opacity: .85;
 }
 
+.column-thumbnail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* iPad portrait */
 @media only screen and (min-width: 721px) {
   .main-container {
