@@ -504,4 +504,8 @@
   #post-content {
     font-size: .85rem;
   }
+
+  .line-numbers.highlight.language-javascript {
+    max-width: 1024px;
+  }
 }
