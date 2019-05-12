@@ -506,6 +506,10 @@
   }
 
   .line-numbers.highlight.language-javascript {
-    max-width: 1024px;
+    max-width: var(--max-width);
+  }
+
+  #post-content p {
+    max-width: var(--max-width);
   }
 }
