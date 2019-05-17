@@ -9,11 +9,11 @@
 <!-- Date & Category -->
 <div class="card-footer post-entry-info ">
   <div class="columns col-gapless">
-    <div class="column column-6 text-gray" style="text-align: left">
+    <div class="column column-6 text-gray">
       <img class="author-thumb lazyload" src="<%= url_for(theme.img.avatar) %>" alt="<%= config.author %>'s Avatar">
       <time><%= date(post.date, config.date_format) %></time>
     </div>
-    <div class="column column-6" style="text-align: right">
+    <div class="column column-6 read-more">
       <a href="<%= url_for(post.path) %>">Read more</a>
     </div>
   </div>

@@ -83,6 +83,10 @@
   border-radius: 3px;
 }
 
+.read-more {
+  text-align: right
+}
+
 /* iPad portrait */
 @media only screen and (min-width: 721px) {
   .post-entry a.card-title {
