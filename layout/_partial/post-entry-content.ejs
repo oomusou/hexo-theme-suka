@@ -1,23 +1,16 @@
-<% if (post.title) { %>
-<h2 class="h5 mb-0 card-header"><a class="card-title" href="<%= url_for(post.path) %>"><%- post.title %></a></h2>
-<% } %>
+<h2 class="h5 mb-0 card-header">
+  <a class="card-title" href="<%= url_for(post.path) %>">
+    <%- post.title %>
+  </a>
+</h2>
 <p class="mb-0 card-body">
   <%- post.excerpt.slice(3, -4) %>
 </p>
-<%
-    var lazyloadImgSrc = '';
-    if (theme.vendors.lazyload_img) {
-        lazyloadImgSrc = theme.vendors.lazyload_img;
-    } else {
-        lazyloadImgSrc = url_for('img/suka-lazyload.gif');
-    }
-%>
 <!-- Date & Category -->
 <div class="card-footer post-entry-info ">
   <div class="columns col-gapless">
     <div class="column column-6 text-gray" style="text-align: left">
-      <img class="author-thumb lazyload" data-src="<%= url_for(theme.img.avatar) %>" src="<%= lazyloadImgSrc %>"
-        alt="<%= config.author %>'s Avatar">
+      <img class="author-thumb lazyload" src="<%= url_for(theme.img.avatar) %>" alt="<%= config.author %>'s Avatar">
       <time><%= date(post.date, config.date_format) %></time>
     </div>
     <div class="column column-6" style="text-align: right">
