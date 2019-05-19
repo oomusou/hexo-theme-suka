@@ -1,4 +1,5 @@
 /* iPhone portrait */
+
 .main-container {
   width: 100%;
   margin-left: auto;
@@ -7,6 +8,15 @@
 
 .post-stream-container {
   width: 100%;
+}
+
+.pagination {
+  margin: 0 0;
+  padding: 0 0;
+}
+
+.pagination .page-item {
+  margin: 0 0;
 }
 
 .pagination .page-item i {
@@ -25,6 +35,7 @@
 }
 
 /* iPad portrait */
+
 @media only screen and (min-width: 721px) {
   .main-container {
     max-width: 44rem;
@@ -32,6 +43,7 @@
 }
 
 /* iPhone landscape  */
+
 @media only screen and (min-width: 800px) {
   .main-container {
     max-width: 37.5rem;
@@ -39,6 +51,7 @@
 }
 
 /* desktop, iPad landscape */
+
 @media only screen and (min-width: 961px) {
   .main-container {
     max-width: 96%;
