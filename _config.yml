@@ -63,7 +63,7 @@ footer:
 # Customize Settings
 # ---------------------------------------------------------------
 uiux:
-  # Muilt line slogan is supported.
+  # Slogan for Blog
   slogan: 學而時習之，不亦悅乎
   # For most link color except post color
   link_color:
