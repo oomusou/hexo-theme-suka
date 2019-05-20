@@ -14,11 +14,12 @@
 	var incFontSize;
 
 	window.onload = function () {
-		oriFontSize = window.getComputedStyle(document.getElementById('post-content')).fontSize;
+		var postConetnt = document.getElementById('post-content');
+		oriFontSize = window.getComputedStyle(postConetnt).fontSize;
 		incFontSize = parseInt(oriFontSize) * 1.2 + 'px';
-	}
+	};
 
-	var increaseFontSize = function () {
+	function increaseFontSize() {
 		var postContent = document.getElementById('post-content');
 		var fontSize = window.getComputedStyle(postContent).fontSize;
 
