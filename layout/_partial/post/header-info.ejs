@@ -9,6 +9,27 @@
         lazyloadImgSrc = url_for('img/suka-lazyload.gif');
     }
 %>
+<script>
+	var oriFontSize;
+	var incFontSize;
+
+	window.onload = function () {
+		oriFontSize = window.getComputedStyle(document.getElementById('post-content')).fontSize;
+		incFontSize = parseInt(oriFontSize) * 1.2 + 'px';
+	}
+
+	var increaseFontSize = function () {
+		var postContent = document.getElementById('post-content');
+		var fontSize = window.getComputedStyle(postContent).fontSize;
+
+		if (fontSize === oriFontSize) {
+			postContent.style.fontSize = incFontSize;
+		}
+		else {
+			postContent.style.fontSize = oriFontSize;
+		}
+	}
+</script>
 <div class="post-header-info">
 	<div class="columns">
 		<div class="column column-6 text-gray">
@@ -17,7 +38,8 @@
 			<span><%= date(page.date, config.date_format) %></span>
 		</div>
 		<div class="column column-6 increase-font-size">
-			<img src="/images/svg/font-size.svg" alt="font size" class="font-size">
+			<a style="cursor: pointer;" onclick="increaseFontSize()"><img src="/images/svg/font-size.svg" alt="font size"
+					class="font-size"></a>
 		</div>
 	</div>
 </div>

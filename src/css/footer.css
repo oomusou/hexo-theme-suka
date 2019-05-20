@@ -4,14 +4,12 @@ footer {
   color: #999;
 }
 
-.footer-copyright-a,
-.footer-copyright-a:visited {
+.footer-copyright-a, .footer-copyright-a:visited {
   text-decoration: none;
   color: #999;
 }
 
-.footer-copyright-a:hover,
-.footer-copyright-a:focus {
+.footer-copyright-a:hover, .footer-copyright-a:focus {
   color: #535353;
   text-decoration: underline !important;
 }
@@ -20,13 +18,11 @@ footer {
   color: #999;
 }
 
-.footer-develop-a,
-.footer-develop-a:visited {
+.footer-develop-a, .footer-develop-a:visited {
   color: #6b6b6b;
 }
 
-.footer-develop-a:hover,
-.footer-develop-a:focus {
+.footer-develop-a:hover, .footer-develop-a:focus {
   color: #535353;
 }
 
@@ -36,4 +32,9 @@ footer {
 
 .footer-develop-divider::after {
   content: "|"
+}
+
+.social-media {
+  width: 18px;
+  vertical-align: bottom;
 }
