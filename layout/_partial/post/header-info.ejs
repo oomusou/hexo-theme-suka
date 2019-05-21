@@ -2,45 +2,15 @@
 <h1 class="card-title h3 mb-2"><%- page.title %></h1>
 <% } %>
 <%
-    var lazyloadImgSrc = '';
-    if (theme.vendors.lazyload_img) {
-        lazyloadImgSrc = theme.vendors.lazyload_img;
-    } else {
-        lazyloadImgSrc = url_for('img/suka-lazyload.gif');
-    }
+  var lazyloadImgSrc = '';
+  if (theme.vendors.lazyload_img) {
+    lazyloadImgSrc = theme.vendors.lazyload_img;
+  } else {
+    lazyloadImgSrc = url_for('img/suka-lazyload.gif');
+  }
 %>
-<script>
-	var oriFontSize;
-	var incFontSize;
-
-	window.onload = function () {
-		var postConetnt = document.getElementById('post-content');
-		oriFontSize = window.getComputedStyle(postConetnt).fontSize;
-		incFontSize = parseInt(oriFontSize) * 1.2 + 'px';
-	};
-
-	function increaseFontSize() {
-		var postContent = document.getElementById('post-content');
-		var fontSize = window.getComputedStyle(postContent).fontSize;
-
-		if (fontSize === oriFontSize) {
-			postContent.style.fontSize = incFontSize;
-		}
-		else {
-			postContent.style.fontSize = oriFontSize;
-		}
-	}
-</script>
 <div class="post-header-info">
-	<div class="columns">
-		<div class="column column-6 text-gray">
-			<img class="author-thumb lazyload" data-src="<%= url_for(theme.img.avatar) %>" src="<%= lazyloadImgSrc %>"
-				alt="<%= config.author %>'s Avatar">
-			<span><%= date(page.date, config.date_format) %></span>
-		</div>
-		<div class="column column-6 increase-font-size">
-			<a style="cursor: pointer;" onclick="increaseFontSize()"><img src="/images/svg/font-size.svg" alt="font size"
-					class="font-size"></a>
-		</div>
-	</div>
+	<img class="author-thumb lazyload" data-src="<%= url_for(theme.img.avatar) %>" src="<%= lazyloadImgSrc %>"
+		alt="<%= config.author %>'s Avatar">
+	<span><%= date(page.date, config.date_format) %></span>
 </div>

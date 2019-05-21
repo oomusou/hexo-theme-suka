@@ -1,7 +1,90 @@
+<script>
+  var oriBodyFontSize;
+  var incBodyFontSize;
+  var oriTitleFontSize;
+  var incTitleFontSize;
+  var oriConentFontSize;
+  var incContentFontSize;
+
+  window.onload = function () {
+    var title = document.querySelector('.post-entry a.card-title');
+    if (title != undefined) {
+      oriTitleFontSize = window.getComputedStyle(title).fontSize;
+      incTitleFontSize = parseInt(oriTitleFontSize) * 1.2 + 'px';
+    }
+
+    var body = document.querySelector('.post-entry .card-body');
+    if (body != undefined) {
+      oriBodyFontSize = window.getComputedStyle(body).fontSize;
+      incBodyFontSize = parseInt(oriBodyFontSize) * 1.2 + 'px';
+    }
+
+    var content = document.getElementById('post-content');
+    if (content != undefined) {
+      oriConentFontSize = window.getComputedStyle(content).fontSize;
+      incContentFontSize = parseInt(oriConentFontSize) * 1.2 + 'px';
+    }
+  };
+
+  function increaseFontSize() {
+    var title = document.querySelector('.post-entry a.card-title');
+    if (title != undefined) {
+      var titleFontSize = window.getComputedStyle(title).fontSize;
+
+      if (titleFontSize === oriTitleFontSize) {
+        document.querySelectorAll('.post-entry a.card-title').forEach(
+          x => x.style['font-size'] = incTitleFontSize
+        );
+      }
+      else {
+        document.querySelectorAll('.post-entry a.card-title').forEach(
+          x => x.style['font-size'] = oriTitleFontSize
+        );
+      }
+    }
+
+    var body = document.querySelector('.post-entry .card-body');
+    if (body != undefined) {
+      var bodyFontSize = window.getComputedStyle(body).fontSize;
+
+      if (bodyFontSize === oriBodyFontSize) {
+        document.querySelectorAll('.post-entry .card-body').forEach(
+          x => x.style['font-size'] = incBodyFontSize
+        );
+      }
+      else {
+        document.querySelectorAll('.post-entry .card-body').forEach(
+          x => x.style['font-size'] = oriBodyFontSize
+        );
+      }
+    }
+
+    var content = document.getElementById('post-content');
+    if (content != undefined) {
+      var contentFontSize = window.getComputedStyle(content).fontSize;
+
+      if (contentFontSize === oriConentFontSize) {
+        content.style.fontSize = incContentFontSize;
+      }
+      else {
+        content.style.fontSize = oriConentFontSize;
+      }
+    }
+  }
+</script>
 <nav class="navbar-section text-center">
-  <a href="<%= url_for('/') %>" class="navbar-link">Home</a>
-  <a href="<%= url_for('archives/') %>" class="navbar-link">Archives</a>
-  <a href="<%= url_for('tags/') %>" class="navbar-link">Tags</a>
-  <a href="<%= theme.nav.search.link %>" class="navbar-link">Search</a>
-  <a href="<%= url_for(config.feed.path) %>" target="_blank" class="navbar-link">RSS</a>
+  <div class="columns">
+    <div class="column col-1"></div>
+    <div class="column col-10 col-sm-12 align-content-center">
+      <a href="<%= url_for('/') %>" class="navbar-link">Home</a>
+      <a href="<%= url_for('archives/') %>" class="navbar-link">Archives</a>
+      <a href="<%= url_for('tags/') %>" class="navbar-link">Tags</a>
+      <a href="<%= theme.nav.search.link %>" class="navbar-link">Search</a>
+      <a href="<%= url_for(config.feed.path) %>" target="_blank" class="navbar-link">RSS</a>
+    </div>
+    <div class="column col-1 increase-font-size">
+      <a class="hide-sm" style="cursor: pointer;" onclick="increaseFontSize()"><img src="/images/svg/font-size.svg"
+          alt="font size" class="font-size"></a>
+    </div>
+  </div>
 </nav>
