@@ -1,19 +1,19 @@
 <div class="post-container">
-    <div id="post-card" class="card">
-        <div class="card-item-container">
-            <div class="card-inner-cell">
-                <!-- # Post Header Info # -->
-                <div class="card-header">
-                    <%- partial('_partial/post/header-info') %>
-                </div>
-                <div class="card-body">
-                    <article id="post-content">
-                        <%- page.content %>
-                    </article>
-                    <%- partial('_partial/post/footer-info') %>
-                </div>
-                <%- partial('_partial/post/footer-pagination') %>
-            </div>
-        </div>
-    </div>
+	<div id="post-card" class="card">
+		<div class="card-item-container">
+			<div class="card-inner-cell">
+				<!-- # Post Header Info # -->
+				<div class="card-header">
+					<%- partial('_partial/post/header-info') %>
+				</div>
+				<div class="card-body">
+					<article id="post-content">
+						<%- page.content %>
+					</article>
+					<%- partial('_partial/post/footer-info') %>
+				</div>
+				<%- partial('_partial/post/footer-pagination') %>
+			</div>
+		</div>
+	</div>
 </div>
