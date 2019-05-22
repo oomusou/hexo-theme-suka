@@ -6,8 +6,8 @@
   let oriContentFontSize;
   let incContentFontSize;
 
-  function getFontSize(pred, selector) {
-    let element = pred.call(document, selector);
+  function getFontSize(selector) {
+    let element = document.querySelector(selector);
 
     if (element !== null) {
       let oriFontSize = window.getComputedStyle(element).fontSize;
@@ -25,15 +25,15 @@
   window.onload = function () {
     let result;
 
-    result = getFontSize(document.querySelector, '.post-entry a.card-title');
+    result = getFontSize('.post-entry a.card-title');
     oriTitleFontSize = result[0];
     incTitleFontSize = result[1];
 
-    result = getFontSize(document.querySelector, '.post-entry .card-body');
+    result = getFontSize('.post-entry .card-body');
     oriBodyFontSize = result[0];
     incBodyFontSize = result[1];
 
-    result = getFontSize(document.getElementById, 'post-content');
+    result = getFontSize('#post-content');
     oriContentFontSize = result[0];
     incContentFontSize = result[1];
   };
@@ -47,8 +47,7 @@
         document.querySelectorAll('.post-entry a.card-title').forEach(
           x => x.style['font-size'] = incTitleFontSize
         );
-      }
-      else {
+      } else {
         document.querySelectorAll('.post-entry a.card-title').forEach(
           x => x.style['font-size'] = oriTitleFontSize
         );
@@ -63,8 +62,7 @@
         document.querySelectorAll('.post-entry .card-body').forEach(
           x => x.style['font-size'] = incBodyFontSize
         );
-      }
-      else {
+      } else {
         document.querySelectorAll('.post-entry .card-body').forEach(
           x => x.style['font-size'] = oriBodyFontSize
         );
@@ -77,8 +75,7 @@
 
       if (contentFontSize === oriContentFontSize) {
         content.style.fontSize = incContentFontSize;
-      }
-      else {
+      } else {
         content.style.fontSize = oriContentFontSize;
       }
     }
@@ -95,7 +92,8 @@
       <a href="<%= url_for(config.feed.path) %>" target="_blank" class="navbar-link">RSS</a>
     </div>
     <div class="column col-1 increase-font-size">
-      <a class="hide-sm" style="cursor: pointer;" onclick="increaseFontSize()"><img src="/images/svg/font-size.svg"
+      <a class="hide-sm" style="cursor: pointer;" onclick="increaseFontSize()"><img
+          src="/images/svg/font-size.svg"
           alt="font size" class="font-size"></a>
     </div>
   </div>
