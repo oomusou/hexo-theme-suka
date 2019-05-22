@@ -1,17 +1,17 @@
 <script>
-  var oriTitleFontSize;
-  var incTitleFontSize;
-  var oriBodyFontSize;
-  var incBodyFontSize;
-  var oriConentFontSize;
-  var incContentFontSize;
+  let oriTitleFontSize;
+  let incTitleFontSize;
+  let oriBodyFontSize;
+  let incBodyFontSize;
+  let oriContentFontSize;
+  let incContentFontSize;
 
   function getFontSize(pred, selector) {
-    var element = pred.call(document, selector);
+    let element = pred.call(document, selector);
 
-    if (element != undefined) {
-      oriFontSize = window.getComputedStyle(element).fontSize;
-      incFontSize = parseInt(oriFontSize) * 1.2 + 'px';
+    if (element !== null) {
+      let oriFontSize = window.getComputedStyle(element).fontSize;
+      let incFontSize = parseInt(oriFontSize) * 1.2 + 'px';
 
       return [
         oriFontSize,
@@ -23,7 +23,7 @@
   }
 
   window.onload = function () {
-    var result = [];
+    let result;
 
     result = getFontSize(document.querySelector, '.post-entry a.card-title');
     oriTitleFontSize = result[0];
@@ -34,14 +34,14 @@
     incBodyFontSize = result[1];
 
     result = getFontSize(document.getElementById, 'post-content');
-    oriConentFontSize = result[0];
+    oriContentFontSize = result[0];
     incContentFontSize = result[1];
   };
 
   function increaseFontSize() {
-    var title = document.querySelector('.post-entry a.card-title');
-    if (title != undefined) {
-      var titleFontSize = window.getComputedStyle(title).fontSize;
+    let title = document.querySelector('.post-entry a.card-title');
+    if (title !== null) {
+      let titleFontSize = window.getComputedStyle(title).fontSize;
 
       if (titleFontSize === oriTitleFontSize) {
         document.querySelectorAll('.post-entry a.card-title').forEach(
@@ -55,9 +55,9 @@
       }
     }
 
-    var body = document.querySelector('.post-entry .card-body');
-    if (body != undefined) {
-      var bodyFontSize = window.getComputedStyle(body).fontSize;
+    let body = document.querySelector('.post-entry .card-body');
+    if (body !== null) {
+      let bodyFontSize = window.getComputedStyle(body).fontSize;
 
       if (bodyFontSize === oriBodyFontSize) {
         document.querySelectorAll('.post-entry .card-body').forEach(
@@ -71,15 +71,15 @@
       }
     }
 
-    var content = document.getElementById('post-content');
-    if (content != undefined) {
-      var contentFontSize = window.getComputedStyle(content).fontSize;
+    let content = document.getElementById('post-content');
+    if (content !== null) {
+      let contentFontSize = window.getComputedStyle(content).fontSize;
 
-      if (contentFontSize === oriConentFontSize) {
+      if (contentFontSize === oriContentFontSize) {
         content.style.fontSize = incContentFontSize;
       }
       else {
-        content.style.fontSize = oriConentFontSize;
+        content.style.fontSize = oriContentFontSize;
       }
     }
   }
