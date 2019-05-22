@@ -20,7 +20,30 @@
     }
 
     return [0, 0];
-  }
+  };
+
+  let toggleFontSize = selector => oriFontSize => incFontSize => {
+    let element = document.querySelector(selector);
+    if (element !== null) {
+      let fontSize = window.getComputedStyle(element).fontSize;
+
+      if (fontSize === oriFontSize) {
+        document.querySelectorAll(selector).forEach(
+          x => x.style['font-size'] = incFontSize
+        );
+      } else {
+        document.querySelectorAll(selector).forEach(
+          x => x.style['font-size'] = oriFontSize
+        );
+      }
+    }
+  };
+
+  let increaseFontSize = () => {
+    toggleFontSize('.post-entry a.card-title')(oriTitleFontSize)(incTitleFontSize);
+    toggleFontSize('.post-entry .card-body')(oriBodyFontSize)(incBodyFontSize);
+    toggleFontSize('#post-content')(oriContentFontSize)(incContentFontSize);
+  };
 
   window.onload = function () {
     let result = getFontSize('.post-entry a.card-title');
@@ -36,48 +59,6 @@
     incContentFontSize = result[1];
   };
 
-  function increaseFontSize() {
-    let title = document.querySelector('.post-entry a.card-title');
-    if (title !== null) {
-      let titleFontSize = window.getComputedStyle(title).fontSize;
-
-      if (titleFontSize === oriTitleFontSize) {
-        document.querySelectorAll('.post-entry a.card-title').forEach(
-          x => x.style['font-size'] = incTitleFontSize
-        );
-      } else {
-        document.querySelectorAll('.post-entry a.card-title').forEach(
-          x => x.style['font-size'] = oriTitleFontSize
-        );
-      }
-    }
-
-    let body = document.querySelector('.post-entry .card-body');
-    if (body !== null) {
-      let bodyFontSize = window.getComputedStyle(body).fontSize;
-
-      if (bodyFontSize === oriBodyFontSize) {
-        document.querySelectorAll('.post-entry .card-body').forEach(
-          x => x.style['font-size'] = incBodyFontSize
-        );
-      } else {
-        document.querySelectorAll('.post-entry .card-body').forEach(
-          x => x.style['font-size'] = oriBodyFontSize
-        );
-      }
-    }
-
-    let content = document.getElementById('post-content');
-    if (content !== null) {
-      let contentFontSize = window.getComputedStyle(content).fontSize;
-
-      if (contentFontSize === oriContentFontSize) {
-        content.style.fontSize = incContentFontSize;
-      } else {
-        content.style.fontSize = oriContentFontSize;
-      }
-    }
-  }
 </script>
 <nav class="navbar-section text-center">
   <div class="columns">
