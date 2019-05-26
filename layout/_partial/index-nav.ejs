@@ -1,11 +1,7 @@
 <script>
-  let titleFontSize;
-  let bodyFontSize;
-  let contentFontSize;
-
-  let setFontSize = ({ selector, fontSize }) => document.querySelectorAll(selector).forEach(
-    x => x.style['font-size'] = fontSize
-  );
+  let titleFontSizes;
+  let bodyFontSizes;
+  let contentFontSizes;
 
   let getFontSize = ({ selector }) => {
     let element = document.querySelector(selector);
@@ -23,29 +19,72 @@
     return [0, 0];
   };
 
-  let toggleFontSize = ({ selector, fontSizes }) => {
+  let setFontSize = ({ selector, fontSize }) => document.querySelectorAll(selector).forEach(
+    x => x.style['font-size'] = fontSize
+  );
+
+  let readFontSize = ({ key, value }) => {
+    if (localStorage.getItem(key) !== null) {
+      return localStorage.getItem(key);
+    }
+    else {
+      return value;
+    }
+  };
+
+  let writeFontSize = ({ key, fontSize }) => localStorage.setItem(key, fontSize);
+
+  let loadFontSize = () => {
+    let titleFontSize = readFontSize({ key: 'title', value: titleFontSizes[0] });
+    let bodyFontSize = readFontSize({ key: 'body', value: bodyFontSizes[0] });
+    let contentFontSize = readFontSize({ key: 'content', value: contentFontSizes[0] });
+
+    setFontSize({ selector: '.post-entry a.card-title', fontSize: titleFontSize });
+    setFontSize({ selector: '.post-entry .card-body' , fontSize: bodyFontSize });
+    setFontSize({ selector: '#post-content', fontSize: contentFontSize });
+  }
+
+  let toggleFontSize = ({ selector, key, fontSizes }) => {
     let element = document.querySelector(selector);
     if (element !== null) {
       let fontSize = window.getComputedStyle(element).fontSize;
 
       if (fontSize === fontSizes[0]) {
         setFontSize({ selector, fontSize: fontSizes[1] });
+        writeFontSize({ key, fontSize: fontSizes[1]})
       } else {
         setFontSize({ selector, fontSize: fontSizes[0] });
+        writeFontSize({ key, fontSize: fontSizes[0] });
       }
     }
   };
 
   let increaseFontSize = () => {
-    toggleFontSize({ selector: '.post-entry a.card-title', fontSizes: titleFontSize });
-    toggleFontSize({ selector: '.post-entry .card-body', fontSizes: bodyFontSize });
-    toggleFontSize({ selector: '#post-content', fontSizes: contentFontSize });
+    toggleFontSize({
+      selector: '.post-entry a.card-title',
+      key: 'title',
+      fontSizes: titleFontSizes
+    });
+
+    toggleFontSize({
+      selector: '.post-entry .card-body',
+      key: 'body',
+      fontSizes: bodyFontSizes
+    });
+
+    toggleFontSize({
+      selector: '#post-content',
+      key: 'content',
+      fontSizes: contentFontSizes
+    });
   };
 
   window.onload = function () {
-    titleFontSize = getFontSize({selector: '.post-entry a.card-title'});
-    bodyFontSize = getFontSize({selector: '.post-entry .card-body'});
-    contentFontSize = getFontSize({selector: '#post-content'});
+    titleFontSizes = getFontSize({ selector: '.post-entry a.card-title' });
+    bodyFontSizes = getFontSize({ selector: '.post-entry .card-body' });
+    contentFontSizes = getFontSize({ selector: '#post-content' });
+
+    loadFontSize();
   };
 </script>
 <nav class="navbar-section text-center">
