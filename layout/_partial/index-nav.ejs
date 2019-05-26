@@ -3,7 +3,11 @@
   let bodyFontSize;
   let contentFontSize;
 
-  let getFontSize = selector => {
+  let setFontSize = ({ selector, fontSize }) => document.querySelectorAll(selector).forEach(
+    x => x.style['font-size'] = fontSize
+  );
+
+  let getFontSize = ({ selector }) => {
     let element = document.querySelector(selector);
 
     if (element !== null) {
@@ -19,33 +23,29 @@
     return [0, 0];
   };
 
-  let toggleFontSize = selector => fontSizes => {
+  let toggleFontSize = ({ selector, fontSizes }) => {
     let element = document.querySelector(selector);
     if (element !== null) {
       let fontSize = window.getComputedStyle(element).fontSize;
 
       if (fontSize === fontSizes[0]) {
-        document.querySelectorAll(selector).forEach(
-          x => x.style['font-size'] = fontSizes[1]
-        );
+        setFontSize({ selector, fontSize: fontSizes[1] });
       } else {
-        document.querySelectorAll(selector).forEach(
-          x => x.style['font-size'] = fontSizes[0]
-        );
+        setFontSize({ selector, fontSize: fontSizes[0] });
       }
     }
   };
 
   let increaseFontSize = () => {
-    toggleFontSize('.post-entry a.card-title')(titleFontSize);
-    toggleFontSize('.post-entry .card-body')(bodyFontSize);
-    toggleFontSize('#post-content')(contentFontSize);
+    toggleFontSize({ selector: '.post-entry a.card-title', fontSizes: titleFontSize });
+    toggleFontSize({ selector: '.post-entry .card-body', fontSizes: bodyFontSize });
+    toggleFontSize({ selector: '#post-content', fontSizes: contentFontSize });
   };
 
   window.onload = function () {
-    titleFontSize = getFontSize('.post-entry a.card-title');
-    bodyFontSize = getFontSize('.post-entry .card-body');
-    contentFontSize = getFontSize('#post-content');
+    titleFontSize = getFontSize({selector: '.post-entry a.card-title'});
+    bodyFontSize = getFontSize({selector: '.post-entry .card-body'});
+    contentFontSize = getFontSize({selector: '#post-content'});
   };
 </script>
 <nav class="navbar-section text-center">
