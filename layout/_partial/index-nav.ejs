@@ -35,13 +35,19 @@
   let writeFontSize = ({ key, fontSize }) => localStorage.setItem(key, fontSize);
 
   let loadFontSize = () => {
-    let titleFontSize = readFontSize({ key: 'title', value: titleFontSizes[0] });
-    let bodyFontSize = readFontSize({ key: 'body', value: bodyFontSizes[0] });
-    let contentFontSize = readFontSize({ key: 'content', value: contentFontSizes[0] });
+    setFontSize({
+      selector: '.post-entry a.card-title',
+      fontSize: readFontSize({ key: 'title', value: titleFontSizes[0] })
+    });
 
-    setFontSize({ selector: '.post-entry a.card-title', fontSize: titleFontSize });
-    setFontSize({ selector: '.post-entry .card-body' , fontSize: bodyFontSize });
-    setFontSize({ selector: '#post-content', fontSize: contentFontSize });
+    setFontSize({
+      selector: '.post-entry .card-body' ,
+      fontSize: readFontSize({ key: 'body', value: bodyFontSizes[0] })
+    });
+
+    setFontSize({
+      selector: '#post-content',
+      fontSize: readFontSize({ key: 'content', value: contentFontSizes[0] }) });
   }
 
   let toggleFontSize = ({ selector, key, fontSizes }) => {
