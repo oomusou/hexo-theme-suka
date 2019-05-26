@@ -1,10 +1,7 @@
 <script>
-  let oriTitleFontSize;
-  let incTitleFontSize;
-  let oriBodyFontSize;
-  let incBodyFontSize;
-  let oriContentFontSize;
-  let incContentFontSize;
+  let titleFontSize;
+  let bodyFontSize;
+  let contentFontSize;
 
   let getFontSize = selector => {
     let element = document.querySelector(selector);
@@ -22,41 +19,33 @@
     return [0, 0];
   };
 
-  let toggleFontSize = selector => oriFontSize => incFontSize => {
+  let toggleFontSize = selector => fontSizes => {
     let element = document.querySelector(selector);
     if (element !== null) {
       let fontSize = window.getComputedStyle(element).fontSize;
 
-      if (fontSize === oriFontSize) {
+      if (fontSize === fontSizes[0]) {
         document.querySelectorAll(selector).forEach(
-          x => x.style['font-size'] = incFontSize
+          x => x.style['font-size'] = fontSizes[1]
         );
       } else {
         document.querySelectorAll(selector).forEach(
-          x => x.style['font-size'] = oriFontSize
+          x => x.style['font-size'] = fontSizes[0]
         );
       }
     }
   };
 
   let increaseFontSize = () => {
-    toggleFontSize('.post-entry a.card-title')(oriTitleFontSize)(incTitleFontSize);
-    toggleFontSize('.post-entry .card-body')(oriBodyFontSize)(incBodyFontSize);
-    toggleFontSize('#post-content')(oriContentFontSize)(incContentFontSize);
+    toggleFontSize('.post-entry a.card-title')(titleFontSize);
+    toggleFontSize('.post-entry .card-body')(bodyFontSize);
+    toggleFontSize('#post-content')(contentFontSize);
   };
 
   window.onload = function () {
-    let result = getFontSize('.post-entry a.card-title');
-    oriTitleFontSize = result[0];
-    incTitleFontSize = result[1];
-
-    result = getFontSize('.post-entry .card-body');
-    oriBodyFontSize = result[0];
-    incBodyFontSize = result[1];
-
-    result = getFontSize('#post-content');
-    oriContentFontSize = result[0];
-    incContentFontSize = result[1];
+    titleFontSize = getFontSize('.post-entry a.card-title');
+    bodyFontSize = getFontSize('.post-entry .card-body');
+    contentFontSize = getFontSize('#post-content');
   };
 </script>
 <nav class="navbar-section text-center">
