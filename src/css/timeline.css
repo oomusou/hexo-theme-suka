@@ -1,7 +1,7 @@
 .timeline .timeline-item {
   display: flex;
   display: -ms-flexbox;
-  margin-bottom: 0.4rem;
+  margin-bottom: 1.2rem;
   position: relative;
 }
 
