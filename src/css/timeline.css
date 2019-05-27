@@ -1,8 +1,7 @@
-/*! Spectre.css Experimentals v0.5.3 | MIT License | github.com/picturepan2/spectre */
 .timeline .timeline-item {
   display: flex;
   display: -ms-flexbox;
-  margin-bottom: 1.2rem;
+  margin-bottom: 0.4rem;
   position: relative;
 }
 

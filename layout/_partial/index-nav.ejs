@@ -2,6 +2,7 @@
   let titleFontSizes;
   let bodyFontSizes;
   let contentFontSizes;
+  let archiveFontSizes;
 
   let getFontSize = ({ selector }) => {
     let element = document.querySelector(selector);
@@ -35,6 +36,7 @@
   let writeFontSize = ({ key, fontSize }) => localStorage.setItem(key, fontSize);
 
   let loadFontSize = () => {
+    // home
     setFontSize({
       selector: '.post-entry a.card-title',
       fontSize: readFontSize({ key: 'title', value: titleFontSizes[0] })
@@ -45,13 +47,22 @@
       fontSize: readFontSize({ key: 'body', value: bodyFontSizes[0] })
     });
 
+    // post
     setFontSize({
       selector: '#post-content',
-      fontSize: readFontSize({ key: 'content', value: contentFontSizes[0] }) });
+      fontSize: readFontSize({ key: 'content', value: contentFontSizes[0] })
+    });
+
+    // archive
+    setFontSize({
+      selector: '.tile-title',
+      fontSize: readFontSize({ key: 'archive', value: archiveFontSizes[0] })
+    });
   }
 
   let toggleFontSize = ({ selector, key, fontSizes }) => {
     let element = document.querySelector(selector);
+    
     if (element !== null) {
       let fontSize = window.getComputedStyle(element).fontSize;
 
@@ -66,6 +77,7 @@
   };
 
   let increaseFontSize = () => {
+    // home
     toggleFontSize({
       selector: '.post-entry a.card-title',
       key: 'title',
@@ -78,10 +90,18 @@
       fontSizes: bodyFontSizes
     });
 
+    // post
     toggleFontSize({
       selector: '#post-content',
       key: 'content',
       fontSizes: contentFontSizes
+    });
+
+    // archive
+    toggleFontSize({
+      selector: '.tile-title',
+      key: 'archive',
+      fontSizes: archiveFontSizes
     });
   };
 
@@ -89,6 +109,7 @@
     titleFontSizes = getFontSize({ selector: '.post-entry a.card-title' });
     bodyFontSizes = getFontSize({ selector: '.post-entry .card-body' });
     contentFontSizes = getFontSize({ selector: '#post-content' });
+    archiveFontSizes = getFontSize({ selector: '.tile-title' });
 
     loadFontSize();
   };
