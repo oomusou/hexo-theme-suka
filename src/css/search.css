@@ -46,8 +46,9 @@
   color: #444;
 }
 
+/*iPhone portrait/landscape*/
 .search-result-summary {
-  font-size: .7rem;
+  font-size: .9rem;
   line-height: 1rem !important;
   max-height: 3rem;
   overflow: hidden;
@@ -61,7 +62,7 @@
 /* iPad portrait */
 @media screen and (min-width: 721px) {
   .search-result-summary {
-    font-size: 0.9rem;
+    font-size: 1.0rem;
     line-height: 1.6rem !important;
   }
 }
@@ -69,7 +70,7 @@
 /* iPad landscape */
 @media screen and (min-width: 961px) {
   .search-result-summary {
-    font-size: 0.9rem;
+    font-size: 1.0rem;
     line-height: 1.6rem !important;
   }
 }

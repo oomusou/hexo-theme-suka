@@ -3,6 +3,7 @@
   let bodyFontSizes;
   let contentFontSizes;
   let archiveFontSizes;
+  let searchFontSizes;
 
   let getFontSize = ({ selector }) => {
     let element = document.querySelector(selector);
@@ -58,6 +59,12 @@
       selector: '.tile-title',
       fontSize: readFontSize({ key: 'archive', value: archiveFontSizes[0] })
     });
+
+    // search
+    setFontSize({
+      selector: '.search-result-summary',
+      fontSize: readFontSize({ key: 'search', value: searchFontSizes[0] })
+    });
   }
 
   let toggleFontSize = ({ selector, key, fontSizes }) => {
@@ -103,6 +110,13 @@
       key: 'archive',
       fontSizes: archiveFontSizes
     });
+
+    // search
+    toggleFontSize({
+      selector: '.search-result-summary',
+      key: 'search',
+      fontSizes: searchFontSizes
+    });
   };
 
   window.onload = function () {
@@ -110,6 +124,7 @@
     bodyFontSizes = getFontSize({ selector: '.post-entry .card-body' });
     contentFontSizes = getFontSize({ selector: '#post-content' });
     archiveFontSizes = getFontSize({ selector: '.tile-title' });
+    searchFontSizes = getFontSize({ selector: '.search-result-summary'});
 
     loadFontSize();
   };

@@ -49,7 +49,7 @@
   border-radius: 100%;
 }
 
-/* iPhone portrait */
+/* iPhone portrait/landscape */
 .post-entry .card-body {
   padding-top: .6rem;
   font-size: 0.9rem;
