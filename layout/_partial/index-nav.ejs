@@ -3,7 +3,8 @@
   let bodyFontSizes;
   let contentFontSizes;
   let archiveFontSizes;
-  let searchFontSizes;
+  let searchTitleFontSizes;
+  let searchBodyFontSizes;
 
   let getFontSize = ({ selector }) => {
     let element = document.querySelector(selector);
@@ -62,8 +63,13 @@
 
     // search
     setFontSize({
+      selector: '.search-title',
+      fontSize: readFontSize({ key: 'search-title', value: searchTitleFontSizes[0] })
+    });
+
+    setFontSize({
       selector: '.search-result-summary',
-      fontSize: readFontSize({ key: 'search', value: searchFontSizes[0] })
+      fontSize: readFontSize({ key: 'search-body', value: searchBodyFontSizes[0] })
     });
   }
 
@@ -113,9 +119,15 @@
 
     // search
     toggleFontSize({
+      selector: '.search-title',
+      key: 'search-title',
+      fontSizes: searchTitleFontSizes
+    });
+
+    toggleFontSize({
       selector: '.search-result-summary',
-      key: 'search',
-      fontSizes: searchFontSizes
+      key: 'search-body',
+      fontSizes: searchBodyFontSizes
     });
   };
 
@@ -124,7 +136,8 @@
     bodyFontSizes = getFontSize({ selector: '.post-entry .card-body' });
     contentFontSizes = getFontSize({ selector: '#post-content' });
     archiveFontSizes = getFontSize({ selector: '.tile-title' });
-    searchFontSizes = getFontSize({ selector: '.search-result-summary'});
+    searchTitleFontSizes = getFontSize({ selector: '.search-title'});
+    searchBodyFontSizes = getFontSize({ selector: '.search-result-summary'});
 
     loadFontSize();
   };

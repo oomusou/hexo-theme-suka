@@ -94,7 +94,7 @@ var searchFunc = function (searchFilePath) {
             var regS = new RegExp(keyword, 'gi');
             match_title = match_title.replace(regS, '<strong><mark>' + key + '</mark></strong>');
           });
-          str += '<a href="' + data_url + '"><p class="tile-title search-result-title">' + match_title + '</p></a>';
+          str += '<a href="' + data_url + '"><p class="search-title search-result-title">' + match_title + '</p></a>';
           str += '<p class="text-gray search-result-summary">'
           str += '<span class="saerch-result-date">' + data_date + '</span>'
           var content = data.content;
