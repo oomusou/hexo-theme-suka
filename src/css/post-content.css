@@ -445,6 +445,14 @@
   color: #303030;
 }
 
+#post-content a,
+#post-content a:hover,
+#post-content a:focus,
+#post-content a:visited {
+  color: #d73e48;
+  opacity: 1;
+}
+
 /* iPad portrait */
 @media only screen and (min-width: 721px) {
   #post-content {
