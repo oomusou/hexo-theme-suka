@@ -453,6 +453,10 @@
   opacity: 1;
 }
 
+#post-content ul li a {
+  color: #303030 !important;
+}
+
 /* iPad portrait */
 @media only screen and (min-width: 721px) {
   #post-content {

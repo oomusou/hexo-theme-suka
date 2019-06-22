@@ -43,12 +43,22 @@
 
 .search-result-title {
   margin-bottom: .25rem;
-  font-size: .85rem
+  font-size: .85rem;
+  font-weight: 500;
 }
 
 .saerch-result-date {
   padding-right: .4rem;
   color: #444;
+}
+
+.search-title.search-result-title {
+  color:#303030;
+  text-decoration: none;
+}
+
+.search-title.search-result-title a:hover {
+  text-decoration: none;
 }
 
 /*iPhone portrait/landscape*/

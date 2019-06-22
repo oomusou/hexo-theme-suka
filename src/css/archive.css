@@ -1,8 +1,8 @@
 a.timeline-tile-title,
 a.timeline-tile-title span,
 a.timeline-tile-title:visited {
-  color: #454d5d;
-  opacity: .85;
+  color: #303030;
+  opacity: 1;
 }
 
 a.timeline-tile-title span:hover {
