@@ -10,7 +10,7 @@ html .btn:focus {
   box-shadow: none !important;
 }
 
-html a:hover {
+html a {
   text-decoration: none !important;
 }
 
