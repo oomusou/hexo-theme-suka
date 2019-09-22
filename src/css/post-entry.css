@@ -133,4 +133,13 @@
   .post-entry .bg-color {
     background-color: #3D4246;
   }
+
+  .post-entry a.card-title,
+  .post-entry a.card-title:hover,
+  .post-entry a.card-title:visited,
+  .post-entry a.card-title:focus {
+    color: #eee;
+    opacity: 1;
+    text-decoration: none;
+  }
 }
