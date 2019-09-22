@@ -65,11 +65,6 @@ footer:
 uiux:
   # Slogan for Blog
   slogan: 學而時習之，不亦悅乎
-  # For most link color except post color
-  link_color:
-  primary_color:
-  # Background color
-  bg_color:
 
 img:
   avatar: '/img/default_avatar.png'
@@ -94,10 +89,6 @@ nav:
   rss:
     use: true
   pages:
-    #About:
-      #link: /about/
-    #Friends:
-      #link: /links/
 
 # SNS Share Switch
 # Used to choose which items will be displayed in share menu.
@@ -114,7 +105,6 @@ sns_share:
 qrcode:
   index_share: true
   post_share: true
-
 
 # ---------------------------------------------------------------
 # Post Settings
