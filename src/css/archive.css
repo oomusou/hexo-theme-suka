@@ -35,3 +35,9 @@ a.timeline-tile-title span:hover {
     font-size: 0.8rem;
   }
 }
+
+@media (prefers-color-scheme: dark) {
+  a.timeline-tile-title span {
+    color: #eee;
+  }
+}

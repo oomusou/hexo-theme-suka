@@ -130,6 +130,11 @@
     color: #eee;
   }
 
+  .footer-copyright a:hover {
+    color:#54c1ff;
+    text-decoration: none!important;
+  }
+
   .post-entry .bg-color {
     background-color: #3D4246;
   }

@@ -29,10 +29,17 @@
   white-space: nowrap;
   transition: .2s;
   opacity: 1;
+  color: #586070;
 }
 
 .tagscloud a:hover {
   transition: .2s;
   opacity: .85;
   padding: .75rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  .tagscloud a {
+    color: #eee;
+  }
 }

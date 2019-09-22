@@ -109,3 +109,24 @@
     line-height: 1.4rem !important;
   }
 }
+
+@media (prefers-color-scheme: dark) {
+  .search-title.search-result-title {
+    color:#eee;
+  }
+
+  .saerch-result-date {
+    color: #7d89a0;
+  }
+
+  #search-output .tile {
+    border-top: .05rem solid #666;
+  }
+
+
+  mark {
+    background: #555;
+    color: #fff;
+  }
+
+}
