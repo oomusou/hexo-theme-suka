@@ -153,4 +153,15 @@
   code {
     color: #FFF;
   }
+
+  .navbar-link,
+  .navbar-link:visited,
+  .timeline .timeline-item .timeline-icon.icon-lg {
+    color: #54c1ff;
+  }
+
+  .read-more a {
+    color: #54c1ff;
+  }
+
 }
