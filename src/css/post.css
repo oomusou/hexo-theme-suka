@@ -223,4 +223,8 @@ a.category-link {
   #post-card .card-item-container {
     background-color: #3D4246;
   }
+
+  #post-card .card-header {
+    border-bottom: .05rem solid #666;
+  }
 }
