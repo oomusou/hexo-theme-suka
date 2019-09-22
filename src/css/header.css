@@ -43,7 +43,6 @@ header .divider {
 }
 
 /* destkop */
-
 @media (min-width: 481px) {
   header {
     padding: 4.8rem .8rem 0.6rem;

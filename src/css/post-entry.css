@@ -124,5 +124,7 @@
   body {
     background-color: #363b40;
   }
-  
+  a:focus, header a:hover, header a:visited {
+    color:#e6e1d9;
+  }
 }
