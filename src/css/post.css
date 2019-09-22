@@ -1,5 +1,4 @@
 /* iPhone x horizontal */
-
 .post-container {
   max-width: 18rem;
   margin-left: auto;
@@ -217,5 +216,11 @@ a.category-link {
 @media screen and (min-width: 961px) {
   .post-container {
     max-width: 94.5%;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  #post-card .card-item-container {
+    background-color: #3D4246;
   }
 }

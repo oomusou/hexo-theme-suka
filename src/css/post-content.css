@@ -490,3 +490,9 @@
     max-width: var(--max-width);
   }
 }
+
+@media (prefers-color-scheme: dark) {
+  .card-title.h3.mb-2 {
+    color: #eee;
+  }
+}

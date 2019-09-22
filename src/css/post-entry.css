@@ -123,9 +123,6 @@
 @media (prefers-color-scheme: dark) {
   body {
     background-color: #363b40;
-  }
-
-  body {
     color: #e6e1d9;
   }
 
@@ -142,8 +139,6 @@
   .post-entry a.card-title:visited,
   .post-entry a.card-title:focus {
     color: #eee;
-    opacity: 1;
-    text-decoration: none;
   }
 
   .mb-0.card-body code {
@@ -163,5 +158,4 @@
   .read-more a {
     color: #54c1ff;
   }
-
 }
