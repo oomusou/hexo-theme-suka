@@ -514,4 +514,27 @@
     color: #ff868e;
   }
 
+  #post-content blockquote {
+    color: #ccc;
+  }
+
+  a.post-tags-list-item {
+    color: #eee;
+  }
+
+  .bg-gray {
+    background: #363b40;
+  }
+
+  .page-item-title {
+    color: #aaa;
+  }
+
+  .page-item-subtitle {
+    color: #fff;
+  }
+
+  #post-content ul li a {
+    color: #bbb !important;
+  }
 }
