@@ -130,4 +130,7 @@
   a:focus, header a:hover, header a:visited {
     color: #eee;
   }
+  .post-entry .bg-color {
+    background-color: #3D4246;
+  }
 }
