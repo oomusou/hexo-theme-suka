@@ -510,4 +510,8 @@
     border-bottom: 1px solid #999;
   }
 
+  #post-content a {
+    color: #ff868e;
+  }
+
 }
