@@ -65,7 +65,6 @@
 }
 
 /* H1-H6 */
-
 #post-content h1 {
   padding-bottom: 0.3em;
   font-size: 2em;
@@ -399,7 +398,6 @@
 }
 
 /* Fix for highlight */
-
 #post-content figure.highlight {
   margin: .5rem 0;
 }
@@ -495,4 +493,21 @@
   .card-title.h3.mb-2 {
     color: #eee;
   }
+
+  #post-content code {
+    background-color: #555;
+  }
+
+  code {
+    color: #FFF;
+  }
+
+  #post-content h1 {
+    border-bottom: 1px solid #999;
+  }
+
+  #post-content h2 {
+    border-bottom: 1px solid #999;
+  }
+
 }

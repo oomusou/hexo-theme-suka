@@ -71,7 +71,6 @@
 }
 
 /* Post Tag/Category List */
-
 .post-categories-list, .post-tags-list {
   padding: 0;
   margin: 0;
@@ -109,7 +108,6 @@ a.category-link {
 }
 
 /* Post TOC */
-
 #post-toc {
   position: relative;
   z-index: 0;
@@ -160,7 +158,6 @@ a.category-link {
 }
 
 /* Footer Info */
-
 #post-card .post-footer-info {
   text-align: center;
 }
@@ -188,7 +185,6 @@ a.category-link {
 }
 
 /* iPhone SE landscape */
-
 @media screen and (min-width: 480px) {
   .post-container {
     max-width: 27rem;
@@ -196,7 +192,6 @@ a.category-link {
 }
 
 /* iPad portrait */
-
 @media screen and (min-width: 721px) {
   .post-container {
     max-width: 37.5rem;
@@ -204,7 +199,6 @@ a.category-link {
 }
 
 /* iPhone XS-Max landscape  */
-
 @media screen and (min-width: 800px) {
   .post-container {
     max-width: 37.5rem;
@@ -212,7 +206,6 @@ a.category-link {
 }
 
 /* desktop, iPad landscape */
-
 @media screen and (min-width: 961px) {
   .post-container {
     max-width: 94.5%;
@@ -225,6 +218,6 @@ a.category-link {
   }
 
   #post-card .card-header {
-    border-bottom: .05rem solid #666;
+    border-bottom: .05rem solid #999;
   }
 }
