@@ -510,7 +510,10 @@
     border-bottom: 1px solid #999;
   }
 
-  #post-content a {
+  #post-content a,
+  #post-content a:hover,
+  #post-content a:focus,
+  #post-content a:visited {
     color: #ff868e;
   }
 
