@@ -156,6 +156,8 @@
 
   .navbar-link,
   .navbar-link:visited,
+  .navbar-link:hover,
+  .navbar-link:focus,
   .timeline .timeline-item .timeline-icon.icon-lg {
     color: #54c1ff;
   }

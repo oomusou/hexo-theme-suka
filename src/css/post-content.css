@@ -521,7 +521,10 @@
     color: #ccc;
   }
 
-  a.post-tags-list-item {
+  a.post-tags-list-item,
+  a.post-tags-list-item:hover,
+  a.post-tags-list-item:focus,
+  a.post-tags-list-item:visited  {
     color: #eee;
   }
 
