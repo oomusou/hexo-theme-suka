@@ -1,3 +1,5 @@
+@import url(https://cdn.jsdelivr.net/gh/tonsky/FiraCode@2/distr/fira_code.min.css);
+
 #post-card .card-body {
   padding: 1.2rem 0;
   margin: 0 auto;
@@ -15,8 +17,7 @@
 }
 
 #post-content code, #post-content .highlight span, #post-content .highlight code, #post-content pre {
-  font-family: Consolas, "Panic Sans", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", Menlo, "Microsoft Yahei", monospace !important;
-  /* Override Spectre.css font-family for zh-CN */
+  font-family: "Fira Code", "Consolas", "Panic Sans", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", Menlo, "Microsoft Yahei", monospace !important;
 }
 
 #post-content input {
