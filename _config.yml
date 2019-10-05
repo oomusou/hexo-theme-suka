@@ -214,7 +214,7 @@ analytics:
 # Busuanzi
 # The counter by https://busuanzi.ibruce.info
 busuanzi:
-  enable: true
+  enable: false
   # Site views analytics support either pv or uv
   # will be show at footer
   site_uv:
