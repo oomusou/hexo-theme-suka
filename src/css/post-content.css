@@ -15,7 +15,7 @@
 }
 
 #post-content code, #post-content .highlight span, #post-content .highlight code, #post-content pre {
-  font-family: 'Fira Code', monospace, "Consolas", "Panic Sans", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", Menlo, "Microsoft Yahei", monospace !important;
+  font-family: "Consolas", "Panic Sans", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", Menlo, "Microsoft Yahei", monospace !important;
 }
 
 #post-content input {
