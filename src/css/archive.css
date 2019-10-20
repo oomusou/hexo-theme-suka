@@ -37,7 +37,14 @@ a.timeline-tile-title span:hover {
 }
 
 @media (prefers-color-scheme: dark) {
-  a.timeline-tile-title span {
+  a.timeline-tile-title,
+  a.timeline-tile-title span,
+  a.timeline-tile-title:visited {
     color: #eee;
+  }
+
+  a.timeline-tile-title span:hover {
+    color: #ccc;
+    opacity: 1;
   }
 }
