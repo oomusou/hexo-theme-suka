@@ -166,3 +166,7 @@
     color: #54c1ff;
   }
 }
+
+.post-entry .column-thumbnail {
+  min-height: 180px;
+}
