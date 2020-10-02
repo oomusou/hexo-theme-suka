@@ -170,3 +170,17 @@
 .post-entry .column-thumbnail {
   min-height: 184px;
 }
+
+.home-box {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.home-box-item {
+  flex-grow: 0;
+}
+
+.home-box-empty {
+  flex-grow: 1;
+}
