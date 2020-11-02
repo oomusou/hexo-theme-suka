@@ -4,7 +4,7 @@ category: "Category"
 tag: "Tag"
 search:
   main: "Search"
-  placeholder: "Please enter a keyword..."
+  placeholder: " "
   num: "Total %s results found"
   noresult: "No results found. Try another keywords?"
   trygoogle: "You can also try using Google"
