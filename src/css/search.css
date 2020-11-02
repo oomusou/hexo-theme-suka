@@ -1,7 +1,22 @@
+.search-box {
+  display: flex;
+  justify-content: center;
+}
+
+#search-input {
+  width: 300px
+}
+
+#search-field {
+  margin-right: 10px;
+}
+
 #search-input .form-input:focus {
   border-color: rgba(0, 0, 0, .4);
   box-shadow: 0 0 0 .08rem rgba(0, 0, 0, .2);
 }
+
+
 
 #search-input .st-default-search-input {
   background: none;
