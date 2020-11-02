@@ -5,7 +5,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "setup": "npm cache clean && npm install",
-    "lint": "bash lint.sh"
+    "lint": "bash lint.sh",
+    "watch": " ./node_modules/.bin/gulp watch"
   },
   "repository": {
     "type": "git",
